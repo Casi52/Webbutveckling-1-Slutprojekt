@@ -1,3 +1,4 @@
+
 html {
     background-color: rgb(228, 228, 228);
 }
@@ -18,8 +19,7 @@ html {
 }
 
 body { 
-  background: rgb(205,0,255);
-  background: linear-gradient(90deg, rgba(205,0,255,1) 0%, rgba(255,0,44,1) 100%);
+  background-color: rgb(228, 228, 228);
 }
 
 h1 {
@@ -64,12 +64,6 @@ li.dropdown {
     display: inline-block;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-  
 .dropdown-content {
   display: none;
   position: absolute;
@@ -92,103 +86,41 @@ img {
         font-size: 10%;
     }
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Slutet av titel & navbar*/
-
-.flexbox {
-    display: flex;
-  }
   
-.flexbox div {
-    padding: 20px 5px 20px 5px;
-    max-width: 50%;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.flexbox-img {
+.container {
+    margin: 20px auto;
+    width: 100%;
     height: 100%;
+    background-color:rgb(228, 228, 228);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
-.flexbox-text {
-    font-size: 25px;
+.item {
+    background-color:#333;
+    padding: 20px;
+    border-radius: 10px;
+    color:rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 95%;
+    max-height: auto;
+    border-radius: 10åx;
+}
+
+.item-text {
     font-family: monospace;
-}
-
-.flexbox-img {
-
-  margin-left: auto;
-
-  margin-right: auto;
-
-  position: relative;
-
-  max-width: 50%;
-
-}
-
-.slider-button {
-
-  border: 1px;
-
-  border-radius: 8px;
-
-  display: inline-block;
-
-  padding: 10px 10px;
-
-  vertical-align: middle;
-
-  overflow: hidden;
-
-  text-decoration: none;
-
-  color: navy;
-
-  background-color: rgba(255, 255, 255, 0.3);
-
-  text-align: center;
-
-  cursor: pointer;
-
-  white-space: nowrap;
-
-  position: absolute;
-
-  top: 50%;
-
-  transform: translate(0%, -50%);
-
-  -ms-transform: translate(0%, -50%);
-
-
-}
-
-.slider-button:hover {
-
-  color: white;
-
-  background-color:navy;
-
-}
-
-@media screen and (max-width: 600px) {
-  .slider-button {
-      padding: 25px 25px;
-      /*Gör knapparna större så att det är lättare att trycka på de på mindre skärmar*/
-  }
-}
-
-.display-left {
-
-  left: 0%;
-
-}
-
-.display-right {
-
-  right: 0%;
-
+    flex-direction: column;
+    font-size: 30px;
 }

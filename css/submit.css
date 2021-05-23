@@ -18,8 +18,7 @@ html {
 }
 
 body { 
-  background: rgb(205,0,255);
-  background: linear-gradient(90deg, rgba(205,0,255,1) 0%, rgba(255,0,44,1) 100%);
+  background-color: lightgray;
 }
 
 h1 {
@@ -64,12 +63,6 @@ li.dropdown {
     display: inline-block;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-  
 .dropdown-content {
   display: none;
   position: absolute;
@@ -92,103 +85,68 @@ img {
         font-size: 10%;
     }
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Slutet av titel & navbar*/
-
-.flexbox {
-    display: flex;
-  }
   
-.flexbox div {
-    padding: 20px 5px 20px 5px;
-    max-width: 50%;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.flexbox-img {
-    height: 100%;
+.form {
+    height: 300px;
+    display: flex;
+    margin: 30px 5% 200px 5%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.flexbox-text {
-    font-size: 25px;
+input {
+    width: 100%;
+    
+}
+
+input:focus {
+    background-color: rgb(209, 221, 255);
+    border: 3px solid rgb(164, 164, 255);
+}
+
+.brief {
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+.ext {
+    font-size: 15px;
+    padding: 10px 5px 75px 5px;
+}
+
+select {
+    width: 101%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    margin: auto;
+    height: 50px;
+    width: 25%;
+    float: right;
+}
+
+.submit-done {
+    padding: 200px;
+}
+
+.done1, .done2 {
+    text-align: center;
     font-family: monospace;
 }
 
-.flexbox-img {
-
-  margin-left: auto;
-
-  margin-right: auto;
-
-  position: relative;
-
-  max-width: 50%;
-
+.done2 {
+    font-size: 25px;
 }
 
-.slider-button {
-
-  border: 1px;
-
-  border-radius: 8px;
-
-  display: inline-block;
-
-  padding: 10px 10px;
-
-  vertical-align: middle;
-
-  overflow: hidden;
-
-  text-decoration: none;
-
-  color: navy;
-
-  background-color: rgba(255, 255, 255, 0.3);
-
-  text-align: center;
-
-  cursor: pointer;
-
-  white-space: nowrap;
-
-  position: absolute;
-
-  top: 50%;
-
-  transform: translate(0%, -50%);
-
-  -ms-transform: translate(0%, -50%);
-
-
-}
-
-.slider-button:hover {
-
-  color: white;
-
-  background-color:navy;
-
-}
-
-@media screen and (max-width: 600px) {
-  .slider-button {
-      padding: 25px 25px;
-      /*Gör knapparna större så att det är lättare att trycka på de på mindre skärmar*/
-  }
-}
-
-.display-left {
-
-  left: 0%;
-
-}
-
-.display-right {
-
-  right: 0%;
-
+h2 {
+    text-align: center;
 }
