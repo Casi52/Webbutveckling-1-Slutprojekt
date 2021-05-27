@@ -87,6 +87,22 @@ img {
   text-align: left;
 }
 
+@media only screen and (max-width: 560px) {
+  body {
+    background-color: blue;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
     .dropdown-content {
         font-size: 10%;
